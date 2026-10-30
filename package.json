@@ -1,0 +1,14 @@
+{
+  "name": "app-market-leaderboard-snapshot",
+  "version": "1.0.0",
+  "description": "Daily App Store top-chart snapshot (free, paid or grossing; overall or one category; any storefront) with rank moves, download and revenue estimate ranges, paid-ad and search signals per app, and which apps entered or left since your last run. Markdown/CSV/JSON, optional Slack or Discord post.",
+  "type": "module",
+  "bin": { "app-market-leaderboard-snapshot": "cli.js" },
+  "scripts": { "test": "node --test test/" },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "author": "Fekri Darkaoui",
+  "repository": { "type": "git", "url": "https://github.com/fdarkaou/app-market-leaderboard-snapshot.git" },
+  "homepage": "https://fdarkaou.github.io/app-market-leaderboard-snapshot/",
+  "keywords": ["app-store", "ios", "top-charts", "app-rankings", "market-research", "aso", "peekpanda"]
+}

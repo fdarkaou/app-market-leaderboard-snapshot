@@ -1,0 +1,428 @@
+{
+  "kind": "peekpanda-leaderboard-snapshot",
+  "query": {
+    "country": "us",
+    "categoryId": "6013",
+    "chartType": "free"
+  },
+  "categoryName": "Health & Fitness",
+  "chartDay": "2026-10-22",
+  "previousDay": "2026-10-21",
+  "snapshotStale": false,
+  "projection": {
+    "computedAt": "2026-10-29T06:00:00.000Z",
+    "stale": false
+  },
+  "fetchedAt": "2026-10-22T07:00:00.000Z",
+  "summary": {
+    "trackedApps": 10,
+    "rankedApps": 10,
+    "gainers": 3,
+    "losers": 5,
+    "newEntrants": 1,
+    "newReleases": 1
+  },
+  "pulse": {
+    "liveAds": 1040,
+    "advertisers": 74,
+    "adsStartedLast7Days": 160,
+    "organicPosts": 5100,
+    "organicMatchedApps": 720,
+    "rankedKeywords": 2300
+  },
+  "findings": {
+    "climbingAndBuying": [
+      {
+        "storeId": "1000000102",
+        "name": "Example Fasting Timer",
+        "placement": {
+          "rank": 3,
+          "previousRank": 9,
+          "chartType": "free",
+          "categoryName": "Health & Fitness"
+        },
+        "liveAds": 31,
+        "startedLast7Days": 9
+      }
+    ],
+    "newEntrants": [
+      {
+        "storeId": "1000000107",
+        "name": "Example Run Coach",
+        "rank": 8,
+        "categoryName": "Health & Fitness",
+        "hasAds": false,
+        "hasOrganic": false,
+        "hasKeywords": true
+      }
+    ],
+    "buyingNotCharting": [
+      {
+        "storeId": "1000000999",
+        "name": "Example Diet Coach",
+        "liveAds": 44,
+        "placement": null
+      }
+    ],
+    "viralNotBuying": [
+      {
+        "storeId": "1000000105",
+        "name": "Example Water Log",
+        "matchedPosts": 7,
+        "views": 41200000
+      }
+    ]
+  },
+  "data": [
+    {
+      "rank": 1,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000101",
+      "name": "Example Step Counter",
+      "developer": "Walk Co",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "ratingCount": 128000,
+      "installs": {
+        "kind": "range",
+        "low": 350000,
+        "mid": 700000,
+        "high": 1400000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "range",
+        "low": 120000,
+        "mid": 250000,
+        "high": 500000,
+        "ceiling": null
+      },
+      "estimateCurrency": "USD",
+      "liveAds": null,
+      "adsStartedLast7Days": null,
+      "organicViews": null,
+      "keywordsTop10": 30,
+      "bestKeyword": "step counter"
+    },
+    {
+      "rank": 2,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000103",
+      "name": "Example Home Workout",
+      "developer": "Gym Pocket",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.5,
+      "ratingCount": 88000,
+      "installs": {
+        "kind": "range",
+        "low": 120000,
+        "mid": 250000,
+        "high": 500000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "range",
+        "low": 300000,
+        "mid": 600000,
+        "high": 1200000,
+        "ceiling": null
+      },
+      "estimateCurrency": "USD",
+      "liveAds": 5,
+      "adsStartedLast7Days": 0,
+      "organicViews": null,
+      "keywordsTop10": 18,
+      "bestKeyword": "home workout"
+    },
+    {
+      "rank": 3,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000100",
+      "name": "Example Calorie Tracker",
+      "developer": "Example Labs",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "ratingCount": 51340,
+      "installs": {
+        "kind": "range",
+        "low": 400000,
+        "mid": 820000,
+        "high": 1600000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "range",
+        "low": 900000,
+        "mid": 1800000,
+        "high": 3600000,
+        "ceiling": null
+      },
+      "estimateCurrency": "USD",
+      "liveAds": 48,
+      "adsStartedLast7Days": 6,
+      "organicViews": 9800000,
+      "keywordsTop10": 41,
+      "bestKeyword": "calorie counter"
+    },
+    {
+      "rank": 4,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000106",
+      "name": "Example Yoga Daily",
+      "developer": "Calm Mat",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "ratingCount": 15000,
+      "installs": {
+        "kind": "range",
+        "low": 50000,
+        "mid": 100000,
+        "high": 200000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "range",
+        "low": 80000,
+        "mid": 160000,
+        "high": 320000,
+        "ceiling": null
+      },
+      "estimateCurrency": "USD",
+      "liveAds": null,
+      "adsStartedLast7Days": null,
+      "organicViews": null,
+      "keywordsTop10": null,
+      "bestKeyword": ""
+    },
+    {
+      "rank": 5,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000104",
+      "name": "Example Sleep Sounds",
+      "developer": "Night Owl Ltd",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.4,
+      "ratingCount": 40200,
+      "installs": {
+        "kind": "range",
+        "low": 90000,
+        "mid": 180000,
+        "high": 360000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "below_floor",
+        "low": null,
+        "mid": null,
+        "high": null,
+        "ceiling": 5000
+      },
+      "estimateCurrency": "USD",
+      "liveAds": null,
+      "adsStartedLast7Days": null,
+      "organicViews": null,
+      "keywordsTop10": null,
+      "bestKeyword": ""
+    },
+    {
+      "rank": 6,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000108",
+      "name": "Example Macro Counter",
+      "developer": "Example Labs",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.6,
+      "ratingCount": 30500,
+      "installs": {
+        "kind": "range",
+        "low": 40000,
+        "mid": 85000,
+        "high": 170000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "range",
+        "low": 60000,
+        "mid": 120000,
+        "high": 240000,
+        "ceiling": null
+      },
+      "estimateCurrency": "USD",
+      "liveAds": null,
+      "adsStartedLast7Days": null,
+      "organicViews": null,
+      "keywordsTop10": null,
+      "bestKeyword": ""
+    },
+    {
+      "rank": 7,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000109",
+      "name": "Example Period Diary",
+      "developer": "Cycle Co",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "ratingCount": 61000,
+      "installs": {
+        "kind": "range",
+        "low": 45000,
+        "mid": 90000,
+        "high": 180000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "below_floor",
+        "low": null,
+        "mid": null,
+        "high": null,
+        "ceiling": 5000
+      },
+      "estimateCurrency": "USD",
+      "liveAds": null,
+      "adsStartedLast7Days": null,
+      "organicViews": null,
+      "keywordsTop10": null,
+      "bestKeyword": ""
+    },
+    {
+      "rank": 8,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000990",
+      "name": "Example Habit Garden",
+      "developer": "Sprout Co",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "ratingCount": 51340,
+      "installs": {
+        "kind": "range",
+        "low": 400000,
+        "mid": 820000,
+        "high": 1600000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "range",
+        "low": 900000,
+        "mid": 1800000,
+        "high": 3600000,
+        "ceiling": null
+      },
+      "estimateCurrency": "USD",
+      "liveAds": 48,
+      "adsStartedLast7Days": 6,
+      "organicViews": 9800000,
+      "keywordsTop10": 41,
+      "bestKeyword": "calorie counter"
+    },
+    {
+      "rank": 14,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000102",
+      "name": "Example Fasting Timer",
+      "developer": "Fast Apps",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.6,
+      "ratingCount": 22100,
+      "installs": {
+        "kind": "range",
+        "low": 150000,
+        "mid": 310000,
+        "high": 620000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "range",
+        "low": 200000,
+        "mid": 410000,
+        "high": 820000,
+        "ceiling": null
+      },
+      "estimateCurrency": "USD",
+      "liveAds": 31,
+      "adsStartedLast7Days": 9,
+      "organicViews": null,
+      "keywordsTop10": 12,
+      "bestKeyword": "fasting"
+    },
+    {
+      "rank": 19,
+      "previousRank": null,
+      "movement": null,
+      "status": "ranked",
+      "storeId": "1000000105",
+      "name": "Example Water Log",
+      "developer": "Drop Studio",
+      "categoryName": "Health & Fitness",
+      "releaseDate": "2023-03-14",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.3,
+      "ratingCount": 9100,
+      "installs": {
+        "kind": "range",
+        "low": 60000,
+        "mid": 120000,
+        "high": 240000,
+        "ceiling": null
+      },
+      "revenue": {
+        "kind": "below_floor",
+        "low": null,
+        "mid": null,
+        "high": null,
+        "ceiling": 5000
+      },
+      "estimateCurrency": "USD",
+      "liveAds": null,
+      "adsStartedLast7Days": null,
+      "organicViews": 41200000,
+      "keywordsTop10": 4,
+      "bestKeyword": "water tracker"
+    }
+  ]
+}

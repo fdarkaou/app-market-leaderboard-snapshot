@@ -1,0 +1,41 @@
+# Example: every morning, snapshot one App Store chart, post what entered or left, and keep a dated history.
+# Disabled until you set the repository variable ENABLE_LEADERBOARD=true.
+# Secrets: PEEKPANDA_TOKEN (PeekPanda API key), LEADERBOARD_WEBHOOK_URL (Slack or Discord incoming webhook).
+name: daily-leaderboard
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+jobs:
+  snapshot:
+    if: vars.ENABLE_LEADERBOARD == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # Keeps yesterday's snapshot between runs so the post can say what changed.
+      - uses: actions/cache/restore@v4
+        with:
+          path: leaderboard-state.json
+          key: leaderboard-state-${{ github.run_id }}
+          restore-keys: leaderboard-state-
+      - name: Leaderboard snapshot
+        env:
+          PEEKPANDA_TOKEN: ${{ secrets.PEEKPANDA_TOKEN }}
+          LEADERBOARD_WEBHOOK_URL: ${{ secrets.LEADERBOARD_WEBHOOK_URL }}
+        run: |
+          # One API call. Change the storefront, category (6013 = Health & Fitness) and chart type to yours.
+          node cli.js --country us --category 6013 --chart free --state leaderboard-state.json --archive history --webhook "$LEADERBOARD_WEBHOOK_URL" >> "$GITHUB_STEP_SUMMARY"
+          node cli.js --file leaderboard-state.json --format csv > leaderboard.csv
+      - uses: actions/cache/save@v4
+        with:
+          path: leaderboard-state.json
+          key: leaderboard-state-${{ github.run_id }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: leaderboard-snapshot
+          path: |
+            leaderboard.csv
+            history/

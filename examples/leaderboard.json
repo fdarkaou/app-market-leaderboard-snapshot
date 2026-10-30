@@ -1,0 +1,2020 @@
+{
+  "projection": {
+    "computedAt": "2026-10-29T06:00:00.000Z",
+    "staleAt": "2026-10-29T09:00:00.000Z",
+    "stale": false
+  },
+  "overview": {
+    "country": "us",
+    "chart": {
+      "day": "2026-10-29",
+      "previousDay": "2026-10-28",
+      "historyDays": 30
+    },
+    "weeks": [
+      "2026-09-07",
+      "2026-09-14",
+      "2026-09-21",
+      "2026-09-28",
+      "2026-10-05",
+      "2026-10-12",
+      "2026-10-19",
+      "2026-10-26"
+    ],
+    "pulse": {
+      "paid": {
+        "totalAds": 1200,
+        "liveAds": 1040,
+        "advertisers": 74,
+        "startedLast7Days": 160,
+        "longestDaysLive": 360,
+        "weeklyStarts": [
+          30,
+          50,
+          70,
+          40,
+          70,
+          110,
+          130,
+          160
+        ],
+        "weeklyAdvertisers": [
+          2,
+          3,
+          5,
+          1,
+          2,
+          7,
+          3,
+          4
+        ]
+      },
+      "organic": {
+        "posts": 5100,
+        "matchedPosts": 1450,
+        "matchedApps": 720,
+        "weeklyFound": [
+          0,
+          4,
+          1,
+          100,
+          150,
+          98,
+          103,
+          60
+        ],
+        "viewsCountedAt": "2026-10-20T00:00:00.000Z"
+      },
+      "keywords": {
+        "rankedKeywords": 2300,
+        "popularityTerms": 33000,
+        "storefronts": 10
+      }
+    },
+    "boards": {
+      "advertisers": [],
+      "viral": [],
+      "searchOwners": []
+    },
+    "searches": {
+      "hottest": [],
+      "wideOpen": []
+    },
+    "findings": {
+      "climbingAndBuying": [
+        {
+          "storeId": "1000000102",
+          "name": "Example Fasting Timer",
+          "iconUrl": null,
+          "categoryName": "Health & Fitness",
+          "placement": {
+            "rank": 3,
+            "previousRank": 9,
+            "chartType": "free",
+            "categoryId": "6013",
+            "categoryName": "Health & Fitness",
+            "day": "2026-10-29"
+          },
+          "startedLast7Days": 9,
+          "liveAds": 31
+        }
+      ],
+      "topTenUncollected": [],
+      "newEntrants": [
+        {
+          "storeId": "1000000107",
+          "name": "Example Run Coach",
+          "iconUrl": null,
+          "categoryName": "Health & Fitness",
+          "rank": 8,
+          "hasAds": false,
+          "hasOrganic": false,
+          "hasKeywords": true
+        }
+      ],
+      "viralNotBuying": [
+        {
+          "storeId": "1000000105",
+          "name": "Example Water Log",
+          "iconUrl": null,
+          "categoryName": "Health & Fitness",
+          "matchedPosts": 7,
+          "views": 41200000
+        }
+      ],
+      "buyingNotCharting": [
+        {
+          "storeId": "1000000999",
+          "name": "Example Diet Coach",
+          "iconUrl": null,
+          "categoryName": "Health & Fitness",
+          "liveAds": 44,
+          "placement": null
+        }
+      ]
+    },
+    "suspects": []
+  },
+  "charts": {
+    "free": {
+      "query": {
+        "country": "us",
+        "categoryId": "all",
+        "chartType": "free",
+        "view": "rankings",
+        "limit": 100
+      },
+      "coverage": {
+        "countries": [
+          {
+            "code": "us",
+            "name": "United States"
+          },
+          {
+            "code": "gb",
+            "name": "United Kingdom"
+          },
+          {
+            "code": "fr",
+            "name": "France"
+          },
+          {
+            "code": "de",
+            "name": "Germany"
+          }
+        ],
+        "categories": [
+          {
+            "id": "all",
+            "name": "Overall"
+          }
+        ],
+        "chartTypes": [
+          "free",
+          "paid",
+          "grossing"
+        ]
+      },
+      "snapshot": {
+        "id": "chart-snapshot-example",
+        "day": "2026-10-29",
+        "sourceUpdatedAt": "2026-10-29T00:00:00.000Z",
+        "fetchedAt": "2026-10-29T00:15:00.000Z",
+        "depth": 100,
+        "previousDay": "2026-10-28",
+        "stale": false
+      },
+      "summary": {
+        "trackedApps": 5,
+        "rankedApps": 5,
+        "gainers": 2,
+        "losers": 1,
+        "newEntrants": 1,
+        "newReleases": 1
+      },
+      "insights": {
+        "categoryMix": [],
+        "releaseAges": [],
+        "categoryLeaders": [],
+        "storefronts": []
+      },
+      "data": [
+        {
+          "storeId": "1000000110",
+          "name": "Example Photo Editor",
+          "developer": "Pixel Fold",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000110",
+          "categoryId": "6008",
+          "categoryName": "Photo & Video",
+          "releaseDate": "2023-03-14",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.6,
+          "ratingCount": 410000,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 2
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 1
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 1
+            }
+          ],
+          "rank": 1,
+          "previousRank": 1,
+          "movement": 0,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 1500000,
+                "mid": 3000000,
+                "high": 6000000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": {
+                "kind": "range",
+                "scope": "worldwide",
+                "range": {
+                  "low": 1500000,
+                  "mid": 3000000,
+                  "high": 6000000
+                },
+                "observedAt": "2026-10-28T00:00:00.000Z"
+              }
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 700000,
+                "mid": 1400000,
+                "high": 2800000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000111",
+          "name": "Example AI Chat",
+          "developer": "Chatty Inc",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000111",
+          "categoryId": "6007",
+          "categoryName": "Productivity",
+          "releaseDate": "2023-03-14",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.7,
+          "ratingCount": 220000,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 5
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 4
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 2
+            }
+          ],
+          "rank": 2,
+          "previousRank": 4,
+          "movement": 2,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 1200000,
+                "mid": 2400000,
+                "high": 4800000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": {
+                "kind": "range",
+                "scope": "worldwide",
+                "range": {
+                  "low": 1000000,
+                  "mid": 2000000,
+                  "high": 4000000
+                },
+                "observedAt": "2026-10-28T00:00:00.000Z"
+              }
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 2000000,
+                "mid": 4000000,
+                "high": 8000000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000100",
+          "name": "Example Calorie Tracker",
+          "developer": "Example Labs",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000100",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "releaseDate": "2023-03-14",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.7,
+          "ratingCount": 51340,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 3
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 2
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 1
+            }
+          ],
+          "rank": 1,
+          "previousRank": 2,
+          "movement": 1,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 400000,
+                "mid": 820000,
+                "high": 1600000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": {
+                "kind": "range",
+                "scope": "worldwide",
+                "range": {
+                  "low": 380000,
+                  "mid": 790000,
+                  "high": 1500000
+                },
+                "observedAt": "2026-10-28T00:00:00.000Z"
+              }
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 900000,
+                "mid": 1800000,
+                "high": 3600000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": {
+                "kind": "range",
+                "scope": "worldwide",
+                "range": {
+                  "low": 850000,
+                  "mid": 1700000,
+                  "high": 3400000
+                },
+                "observedAt": "2026-10-28T00:00:00.000Z"
+              }
+            },
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000112",
+          "name": "Example Ride Share",
+          "developer": "Go Ride",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000112",
+          "categoryId": "6003",
+          "categoryName": "Travel",
+          "releaseDate": "2023-03-14",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.5,
+          "ratingCount": 900000,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 4
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 3
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 4
+            }
+          ],
+          "rank": 4,
+          "previousRank": 3,
+          "movement": -1,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 1000000,
+                "mid": 2000000,
+                "high": 4000000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "monthlyRevenue": null,
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000113",
+          "name": "Example Puzzle Blast",
+          "developer": "Fun Forge",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000113",
+          "categoryId": "6014",
+          "categoryName": "Games",
+          "releaseDate": "2026-10-20",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.4,
+          "ratingCount": 1200,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-29",
+              "rank": 5
+            }
+          ],
+          "rank": 5,
+          "previousRank": null,
+          "movement": null,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": null,
+            "monthlyRevenue": null,
+            "currency": "USD"
+          }
+        }
+      ],
+      "updatedAt": "2026-10-29T00:15:00.000Z"
+    },
+    "paid": {
+      "query": {
+        "country": "us",
+        "categoryId": "all",
+        "chartType": "paid",
+        "view": "rankings",
+        "limit": 100
+      },
+      "coverage": {
+        "countries": [
+          {
+            "code": "us",
+            "name": "United States"
+          },
+          {
+            "code": "gb",
+            "name": "United Kingdom"
+          },
+          {
+            "code": "fr",
+            "name": "France"
+          },
+          {
+            "code": "de",
+            "name": "Germany"
+          }
+        ],
+        "categories": [
+          {
+            "id": "all",
+            "name": "Overall"
+          }
+        ],
+        "chartTypes": [
+          "free",
+          "paid",
+          "grossing"
+        ]
+      },
+      "snapshot": {
+        "id": "chart-snapshot-example",
+        "day": "2026-10-29",
+        "sourceUpdatedAt": "2026-10-29T00:00:00.000Z",
+        "fetchedAt": "2026-10-29T00:15:00.000Z",
+        "depth": 100,
+        "previousDay": "2026-10-28",
+        "stale": false
+      },
+      "summary": {
+        "trackedApps": 3,
+        "rankedApps": 3,
+        "gainers": 1,
+        "losers": 1,
+        "newEntrants": 0,
+        "newReleases": 1
+      },
+      "insights": {
+        "categoryMix": [],
+        "releaseAges": [],
+        "categoryLeaders": [],
+        "storefronts": []
+      },
+      "data": [
+        {
+          "storeId": "1000000114",
+          "name": "Example Weather Pro",
+          "developer": "Sky Labs",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000114",
+          "categoryId": "6001",
+          "categoryName": "Weather",
+          "releaseDate": "2023-03-14",
+          "price": 4.99,
+          "currency": "USD",
+          "rating": 4.8,
+          "ratingCount": 52000,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 2
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 1
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 1
+            }
+          ],
+          "rank": 1,
+          "previousRank": 1,
+          "movement": 0,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 20000,
+                "mid": 40000,
+                "high": 80000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 60000,
+                "mid": 120000,
+                "high": 240000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000115",
+          "name": "Example Pixel Game",
+          "developer": "Fun Forge",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000115",
+          "categoryId": "6014",
+          "categoryName": "Games",
+          "releaseDate": "2023-03-14",
+          "price": 2.99,
+          "currency": "USD",
+          "rating": 4.7,
+          "ratingCount": 8800,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 6
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 5
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 2
+            }
+          ],
+          "rank": 2,
+          "previousRank": 5,
+          "movement": 3,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 10000,
+                "mid": 20000,
+                "high": 40000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 30000,
+                "mid": 60000,
+                "high": 120000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000116",
+          "name": "Example Sleep Sounds Plus",
+          "developer": "Night Owl Ltd",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000116",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "releaseDate": "2023-03-14",
+          "price": 1.99,
+          "currency": "USD",
+          "rating": 4.6,
+          "ratingCount": 3100,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 3
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 2
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 3
+            }
+          ],
+          "rank": 3,
+          "previousRank": 2,
+          "movement": -1,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "below_floor",
+              "scope": "worldwide",
+              "ceiling": 5000,
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "monthlyRevenue": {
+              "kind": "below_floor",
+              "scope": "worldwide",
+              "ceiling": 5000,
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "currency": "USD"
+          }
+        }
+      ],
+      "updatedAt": "2026-10-29T00:15:00.000Z"
+    },
+    "grossing": {
+      "query": {
+        "country": "us",
+        "categoryId": "all",
+        "chartType": "grossing",
+        "view": "rankings",
+        "limit": 100
+      },
+      "coverage": {
+        "countries": [
+          {
+            "code": "us",
+            "name": "United States"
+          },
+          {
+            "code": "gb",
+            "name": "United Kingdom"
+          },
+          {
+            "code": "fr",
+            "name": "France"
+          },
+          {
+            "code": "de",
+            "name": "Germany"
+          }
+        ],
+        "categories": [
+          {
+            "id": "all",
+            "name": "Overall"
+          }
+        ],
+        "chartTypes": [
+          "free",
+          "paid",
+          "grossing"
+        ]
+      },
+      "snapshot": {
+        "id": "chart-snapshot-example",
+        "day": "2026-10-29",
+        "sourceUpdatedAt": "2026-10-29T00:00:00.000Z",
+        "fetchedAt": "2026-10-29T00:15:00.000Z",
+        "depth": 100,
+        "previousDay": "2026-10-28",
+        "stale": false
+      },
+      "summary": {
+        "trackedApps": 3,
+        "rankedApps": 3,
+        "gainers": 2,
+        "losers": 0,
+        "newEntrants": 0,
+        "newReleases": 1
+      },
+      "insights": {
+        "categoryMix": [],
+        "releaseAges": [],
+        "categoryLeaders": [],
+        "storefronts": []
+      },
+      "data": [
+        {
+          "storeId": "1000000117",
+          "name": "Example Video Stream",
+          "developer": "Stream Co",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000117",
+          "categoryId": "6016",
+          "categoryName": "Entertainment",
+          "releaseDate": "2023-03-14",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.6,
+          "ratingCount": 2100000,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 2
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 1
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 1
+            }
+          ],
+          "rank": 1,
+          "previousRank": 1,
+          "movement": 0,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 2000000,
+                "mid": 4000000,
+                "high": 8000000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 40000000,
+                "mid": 80000000,
+                "high": 160000000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000118",
+          "name": "Example Dating",
+          "developer": "Match Labs",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000118",
+          "categoryId": "6012",
+          "categoryName": "Lifestyle",
+          "releaseDate": "2023-03-14",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.3,
+          "ratingCount": 400000,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 4
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 3
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 2
+            }
+          ],
+          "rank": 2,
+          "previousRank": 3,
+          "movement": 1,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 500000,
+                "mid": 1000000,
+                "high": 2000000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 10000000,
+                "mid": 20000000,
+                "high": 40000000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": null
+            },
+            "currency": "USD"
+          }
+        },
+        {
+          "storeId": "1000000100",
+          "name": "Example Calorie Tracker",
+          "developer": "Example Labs",
+          "iconUrl": null,
+          "appUrl": "https://apps.apple.com/us/app/id1000000100",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "releaseDate": "2023-03-14",
+          "price": 0,
+          "currency": "USD",
+          "rating": 4.7,
+          "ratingCount": 51340,
+          "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+          "history": [
+            {
+              "day": "2026-10-27",
+              "rank": 3
+            },
+            {
+              "day": "2026-10-28",
+              "rank": 2
+            },
+            {
+              "day": "2026-10-29",
+              "rank": 1
+            }
+          ],
+          "rank": 1,
+          "previousRank": 2,
+          "movement": 1,
+          "status": "ranked",
+          "inCatalogue": true,
+          "estimates": {
+            "monthlyInstalls": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 400000,
+                "mid": 820000,
+                "high": 1600000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": {
+                "kind": "range",
+                "scope": "worldwide",
+                "range": {
+                  "low": 380000,
+                  "mid": 790000,
+                  "high": 1500000
+                },
+                "observedAt": "2026-10-28T00:00:00.000Z"
+              }
+            },
+            "monthlyRevenue": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 900000,
+                "mid": 1800000,
+                "high": 3600000
+              },
+              "observedAt": "2026-10-29T00:00:00.000Z",
+              "previous": {
+                "kind": "range",
+                "scope": "worldwide",
+                "range": {
+                  "low": 850000,
+                  "mid": 1700000,
+                  "high": 3400000
+                },
+                "observedAt": "2026-10-28T00:00:00.000Z"
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      ],
+      "updatedAt": "2026-10-29T00:15:00.000Z"
+    }
+  },
+  "viewChart": {
+    "query": {
+      "country": "us",
+      "categoryId": "6013",
+      "chartType": "free",
+      "view": "rankings",
+      "limit": 100
+    },
+    "coverage": {
+      "countries": [
+        {
+          "code": "us",
+          "name": "United States"
+        },
+        {
+          "code": "gb",
+          "name": "United Kingdom"
+        },
+        {
+          "code": "fr",
+          "name": "France"
+        },
+        {
+          "code": "de",
+          "name": "Germany"
+        }
+      ],
+      "categories": [
+        {
+          "id": "all",
+          "name": "Overall"
+        },
+        {
+          "id": "6013",
+          "name": "Health & Fitness"
+        }
+      ],
+      "chartTypes": [
+        "free",
+        "paid",
+        "grossing"
+      ]
+    },
+    "snapshot": {
+      "id": "chart-snapshot-example",
+      "day": "2026-10-29",
+      "sourceUpdatedAt": "2026-10-29T00:00:00.000Z",
+      "fetchedAt": "2026-10-29T00:15:00.000Z",
+      "depth": 100,
+      "previousDay": "2026-10-28",
+      "stale": false
+    },
+    "summary": {
+      "trackedApps": 10,
+      "rankedApps": 10,
+      "gainers": 3,
+      "losers": 5,
+      "newEntrants": 1,
+      "newReleases": 1
+    },
+    "insights": {
+      "categoryMix": [],
+      "releaseAges": [],
+      "categoryLeaders": [],
+      "storefronts": []
+    },
+    "data": [
+      {
+        "storeId": "1000000100",
+        "name": "Example Calorie Tracker",
+        "developer": "Example Labs",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000100",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.7,
+        "ratingCount": 51340,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 3
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 2
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 1
+          }
+        ],
+        "rank": 1,
+        "previousRank": 2,
+        "movement": 1,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 400000,
+              "mid": 820000,
+              "high": 1600000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 380000,
+                "mid": 790000,
+                "high": 1500000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 900000,
+              "mid": 1800000,
+              "high": 3600000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 850000,
+                "mid": 1700000,
+                "high": 3400000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000101",
+        "name": "Example Step Counter",
+        "developer": "Walk Co",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000101",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.8,
+        "ratingCount": 128000,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 2
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 1
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 2
+          }
+        ],
+        "rank": 2,
+        "previousRank": 1,
+        "movement": -1,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 350000,
+              "mid": 700000,
+              "high": 1400000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 360000,
+                "mid": 720000,
+                "high": 1450000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 120000,
+              "mid": 250000,
+              "high": 500000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000102",
+        "name": "Example Fasting Timer",
+        "developer": "Fast Apps",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000102",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.6,
+        "ratingCount": 22100,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 10
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 9
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 3
+          }
+        ],
+        "rank": 3,
+        "previousRank": 9,
+        "movement": 6,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 150000,
+              "mid": 310000,
+              "high": 620000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 90000,
+                "mid": 180000,
+                "high": 360000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 200000,
+              "mid": 410000,
+              "high": 820000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 150000,
+                "mid": 300000,
+                "high": 600000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000103",
+        "name": "Example Home Workout",
+        "developer": "Gym Pocket",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000103",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.5,
+        "ratingCount": 88000,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 4
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 3
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 4
+          }
+        ],
+        "rank": 4,
+        "previousRank": 3,
+        "movement": -1,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 120000,
+              "mid": 250000,
+              "high": 500000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 130000,
+                "mid": 260000,
+                "high": 520000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 300000,
+              "mid": 600000,
+              "high": 1200000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000104",
+        "name": "Example Sleep Sounds",
+        "developer": "Night Owl Ltd",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000104",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.4,
+        "ratingCount": 40200,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 6
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 5
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 5
+          }
+        ],
+        "rank": 5,
+        "previousRank": 5,
+        "movement": 0,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 90000,
+              "mid": 180000,
+              "high": 360000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 90000,
+                "mid": 180000,
+                "high": 360000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "below_floor",
+            "scope": "worldwide",
+            "ceiling": 5000,
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000105",
+        "name": "Example Water Log",
+        "developer": "Drop Studio",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000105",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.3,
+        "ratingCount": 9100,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 13
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 12
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 6
+          }
+        ],
+        "rank": 6,
+        "previousRank": 12,
+        "movement": 6,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 60000,
+              "mid": 120000,
+              "high": 240000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 40000,
+                "mid": 80000,
+                "high": 160000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "below_floor",
+            "scope": "worldwide",
+            "ceiling": 5000,
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000106",
+        "name": "Example Yoga Daily",
+        "developer": "Calm Mat",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000106",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.7,
+        "ratingCount": 15000,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 7
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 6
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 7
+          }
+        ],
+        "rank": 7,
+        "previousRank": 6,
+        "movement": -1,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 50000,
+              "mid": 100000,
+              "high": 200000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "monthlyRevenue": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 80000,
+              "mid": 160000,
+              "high": 320000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000107",
+        "name": "Example Run Coach",
+        "developer": "Pace Labs",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000107",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2026-10-02",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.9,
+        "ratingCount": 320,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-29",
+            "rank": 8
+          }
+        ],
+        "rank": 8,
+        "previousRank": null,
+        "movement": null,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": null,
+          "monthlyRevenue": null,
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000108",
+        "name": "Example Macro Counter",
+        "developer": "Example Labs",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000108",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.6,
+        "ratingCount": 30500,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 9
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 8
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 9
+          }
+        ],
+        "rank": 9,
+        "previousRank": 8,
+        "movement": -1,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 40000,
+              "mid": 85000,
+              "high": 170000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 45000,
+                "mid": 90000,
+                "high": 180000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 60000,
+              "mid": 120000,
+              "high": 240000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "currency": "USD"
+        }
+      },
+      {
+        "storeId": "1000000109",
+        "name": "Example Period Diary",
+        "developer": "Cycle Co",
+        "iconUrl": null,
+        "appUrl": "https://apps.apple.com/us/app/id1000000109",
+        "categoryId": "6013",
+        "categoryName": "Health & Fitness",
+        "releaseDate": "2023-03-14",
+        "price": 0,
+        "currency": "USD",
+        "rating": 4.8,
+        "ratingCount": 61000,
+        "metadataUpdatedAt": "2026-10-29T00:15:00.000Z",
+        "history": [
+          {
+            "day": "2026-10-27",
+            "rank": 8
+          },
+          {
+            "day": "2026-10-28",
+            "rank": 7
+          },
+          {
+            "day": "2026-10-29",
+            "rank": 10
+          }
+        ],
+        "rank": 10,
+        "previousRank": 7,
+        "movement": -3,
+        "status": "ranked",
+        "inCatalogue": true,
+        "estimates": {
+          "monthlyInstalls": {
+            "kind": "range",
+            "scope": "worldwide",
+            "range": {
+              "low": 45000,
+              "mid": 90000,
+              "high": 180000
+            },
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": {
+              "kind": "range",
+              "scope": "worldwide",
+              "range": {
+                "low": 50000,
+                "mid": 100000,
+                "high": 200000
+              },
+              "observedAt": "2026-10-28T00:00:00.000Z"
+            }
+          },
+          "monthlyRevenue": {
+            "kind": "below_floor",
+            "scope": "worldwide",
+            "ceiling": 5000,
+            "observedAt": "2026-10-29T00:00:00.000Z",
+            "previous": null
+          },
+          "currency": "USD"
+        }
+      }
+    ],
+    "updatedAt": "2026-10-29T00:15:00.000Z"
+  },
+  "signals": {
+    "country": "us",
+    "weeks": [],
+    "keywordsObservedAt": "2026-10-29T08:40:00.000Z",
+    "organicViewsCountedAt": "2026-10-20T00:00:00.000Z",
+    "apps": [
+      {
+        "storeId": "1000000100",
+        "placement": {
+          "rank": 1,
+          "previousRank": 2,
+          "chartType": "free",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "day": "2026-10-29"
+        },
+        "paid": {
+          "totalAds": 48,
+          "liveAds": 48,
+          "startedLast7Days": 6,
+          "medianDaysLive": 20,
+          "longestDaysLive": 90,
+          "formats": {
+            "video": 48,
+            "dynamic": 0,
+            "image": 0
+          },
+          "topCallToAction": "Install now",
+          "destinations": {
+            "appStore": 48,
+            "playStore": 0,
+            "web": 0
+          },
+          "weeklyStarts": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            4,
+            5,
+            6
+          ]
+        },
+        "organic": {
+          "matchedPosts": 12,
+          "views": 9800000,
+          "medianViews": 400000,
+          "bestPostViews": 3100000,
+          "postsOverMillion": 3,
+          "newestPublishedAt": "2026-10-25T00:00:00.000Z",
+          "platforms": {
+            "TikTok": 12
+          },
+          "matchedBy": "product_name"
+        },
+        "keywords": {
+          "ranked": 123,
+          "top1": 1,
+          "top3": 2,
+          "top10": 41,
+          "top50": 82,
+          "best": {
+            "query": "calorie counter",
+            "position": 1,
+            "popularity": 70,
+            "popularityEstimate": null
+          },
+          "top": [
+            {
+              "query": "calorie counter",
+              "position": 1,
+              "popularity": 70,
+              "popularityEstimate": null
+            }
+          ]
+        }
+      },
+      {
+        "storeId": "1000000101",
+        "placement": {
+          "rank": 2,
+          "previousRank": 1,
+          "chartType": "free",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "day": "2026-10-29"
+        },
+        "paid": null,
+        "organic": null,
+        "keywords": {
+          "ranked": 90,
+          "top1": 1,
+          "top3": 2,
+          "top10": 30,
+          "top50": 60,
+          "best": {
+            "query": "step counter",
+            "position": 1,
+            "popularity": 70,
+            "popularityEstimate": null
+          },
+          "top": [
+            {
+              "query": "step counter",
+              "position": 1,
+              "popularity": 70,
+              "popularityEstimate": null
+            }
+          ]
+        }
+      },
+      {
+        "storeId": "1000000102",
+        "placement": {
+          "rank": 3,
+          "previousRank": 9,
+          "chartType": "free",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "day": "2026-10-29"
+        },
+        "paid": {
+          "totalAds": 31,
+          "liveAds": 31,
+          "startedLast7Days": 9,
+          "medianDaysLive": 20,
+          "longestDaysLive": 90,
+          "formats": {
+            "video": 31,
+            "dynamic": 0,
+            "image": 0
+          },
+          "topCallToAction": "Install now",
+          "destinations": {
+            "appStore": 31,
+            "playStore": 0,
+            "web": 0
+          },
+          "weeklyStarts": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            4,
+            5,
+            9
+          ]
+        },
+        "organic": null,
+        "keywords": {
+          "ranked": 36,
+          "top1": 1,
+          "top3": 2,
+          "top10": 12,
+          "top50": 24,
+          "best": {
+            "query": "fasting",
+            "position": 1,
+            "popularity": 70,
+            "popularityEstimate": null
+          },
+          "top": [
+            {
+              "query": "fasting",
+              "position": 1,
+              "popularity": 70,
+              "popularityEstimate": null
+            }
+          ]
+        }
+      },
+      {
+        "storeId": "1000000103",
+        "placement": {
+          "rank": 4,
+          "previousRank": 3,
+          "chartType": "free",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "day": "2026-10-29"
+        },
+        "paid": {
+          "totalAds": 5,
+          "liveAds": 5,
+          "startedLast7Days": 0,
+          "medianDaysLive": 20,
+          "longestDaysLive": 90,
+          "formats": {
+            "video": 5,
+            "dynamic": 0,
+            "image": 0
+          },
+          "topCallToAction": "Install now",
+          "destinations": {
+            "appStore": 5,
+            "playStore": 0,
+            "web": 0
+          },
+          "weeklyStarts": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            4,
+            5,
+            0
+          ]
+        },
+        "organic": null,
+        "keywords": {
+          "ranked": 54,
+          "top1": 1,
+          "top3": 2,
+          "top10": 18,
+          "top50": 36,
+          "best": {
+            "query": "home workout",
+            "position": 1,
+            "popularity": 70,
+            "popularityEstimate": null
+          },
+          "top": [
+            {
+              "query": "home workout",
+              "position": 1,
+              "popularity": 70,
+              "popularityEstimate": null
+            }
+          ]
+        }
+      },
+      {
+        "storeId": "1000000105",
+        "placement": {
+          "rank": 6,
+          "previousRank": 12,
+          "chartType": "free",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "day": "2026-10-29"
+        },
+        "paid": null,
+        "organic": {
+          "matchedPosts": 7,
+          "views": 41200000,
+          "medianViews": 2000000,
+          "bestPostViews": 22000000,
+          "postsOverMillion": 5,
+          "newestPublishedAt": "2026-10-27T00:00:00.000Z",
+          "platforms": {
+            "TikTok": 7
+          },
+          "matchedBy": "product_name"
+        },
+        "keywords": {
+          "ranked": 12,
+          "top1": 1,
+          "top3": 2,
+          "top10": 4,
+          "top50": 8,
+          "best": {
+            "query": "water tracker",
+            "position": 1,
+            "popularity": 70,
+            "popularityEstimate": null
+          },
+          "top": [
+            {
+              "query": "water tracker",
+              "position": 1,
+              "popularity": 70,
+              "popularityEstimate": null
+            }
+          ]
+        }
+      },
+      {
+        "storeId": "1000000107",
+        "placement": {
+          "rank": 8,
+          "previousRank": null,
+          "chartType": "free",
+          "categoryId": "6013",
+          "categoryName": "Health & Fitness",
+          "day": "2026-10-29"
+        },
+        "paid": null,
+        "organic": null,
+        "keywords": {
+          "ranked": 3,
+          "top1": 1,
+          "top3": 2,
+          "top10": 1,
+          "top50": 2,
+          "best": {
+            "query": "run coach",
+            "position": 1,
+            "popularity": 70,
+            "popularityEstimate": null
+          },
+          "top": [
+            {
+              "query": "run coach",
+              "position": 1,
+              "popularity": 70,
+              "popularityEstimate": null
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

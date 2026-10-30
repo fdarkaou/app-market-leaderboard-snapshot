@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App Store leaderboard snapshot: top charts with rank moves, estimates and ad signals</title>
+<meta name="description" content="Paste a PeekPanda market leaderboard response and read one App Store top chart (free, paid or grossing, overall or by category) with rank moves, rank trend, download and revenue estimate ranges, live ads and what changed since your last snapshot. Runs in your browser.">
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: #1b1b1f; }
+  textarea { width: 100%; min-height: 160px; font: 13px ui-monospace, monospace; }
+  button, select { padding: .45rem .9rem; margin: .5rem .5rem .5rem 0; cursor: pointer; }
+  table { border-collapse: collapse; width: 100%; margin-top: .5rem; font-size: 14px; }
+  th, td { border-bottom: 1px solid #ddd; padding: .35rem .5rem; text-align: left; vertical-align: middle; }
+  td.n { text-align: right; } .up { color: #1a7f37; } .down { color: #cf222e; }
+  .muted { color: #777; } .err { color: #cf222e; white-space: pre-wrap; } .new { color: #1a7f37; font-weight: 600; }
+  pre { background: #f6f8fa; padding: .75rem; overflow-x: auto; font-size: 13px; }
+  footer { margin-top: 2.5rem; font-size: 13px; color: #555; }
+</style>
+</head>
+<body>
+<h1>App Store leaderboard snapshot</h1>
+<p>Read one App Store top chart as a dated snapshot: free, paid or grossing, overall or one category, in any covered storefront. Each row shows the rank move, a short rank trend, download and revenue estimate ranges, live paid ads and how many searches the app ranks top 10 for. Paste a market leaderboard response below. Nothing leaves your browser.</p>
+<textarea id="in" spellcheck="false" placeholder='{"projection":{...},"overview":{...},"charts":{"free":{...},"paid":{...},"grossing":{...}},"viewChart":{...},"signals":{...}}'></textarea>
+<p class="muted">Optional: paste a report you saved earlier for the same chart (CLI <code>--format json</code> or <code>--state</code> file) to see which apps entered or left since then.</p>
+<textarea id="prev" spellcheck="false" style="min-height:60px"></textarea>
+<div>
+  <button id="go">Show chart</button>
+  <button id="ex">Load example data</button>
+  <label>Chart <select id="which"></select></label>
+  <button id="csv" disabled>Download CSV</button>
+</div>
+<div id="err" class="err"></div>
+<div id="out"></div>
+
+<h2>Where to get the JSON</h2>
+<p>The input is the market leaderboard response from <a href="https://peekpanda.com">PeekPanda</a>, an iOS competitor catalogue that keeps dated App Store evidence for each app. One call returns the three overall charts, the chart you picked for a category, the market overview and signals for every app shown:</p>
+<pre>curl --get https://api.peekpanda.com/v1/market/leaderboard \
+  -H "Authorization: Bearer $PEEKPANDA_TOKEN" \
+  -H 'x-genviral-tenancy: personal' \
+  --data-urlencode 'country=us' \
+  --data-urlencode 'categoryId=6013' \
+  --data-urlencode 'chartType=free'</pre>
+<p>Over MCP this is the <code>get_market</code> tool with action <code>leaderboard</code>. You need a PeekPanda account and an API key; the <a href="https://peekpanda.com/docs/market-leaderboard">market leaderboard reference</a> lists every field, and <a href="https://peekpanda.com/docs/leaderboards">leaderboards</a> explains how to read rank changes.</p>
+
+<h2>How to read it</h2>
+<ul>
+  <li>Ranks are dated public App Store chart observations. A move compares with the preceding stored chart day; "new" means the app was not on that day's chart. It says the position changed, not why.</li>
+  <li>Grossing rank is a relative position, not a revenue amount.</li>
+  <li>Downloads and revenue are PeekPanda monthly worldwide estimates, not measured results. "&lt; $5k" is below the estimate floor. An empty cell means no estimate, not zero.</li>
+  <li>Paid ads are collected per chosen app. An empty ads cell means ads were not collected for that app, not that it runs none.</li>
+  <li>"Top-10 searches" counts App Store searches where the app was observed in the top 10 results. It is a position count, not search volume.</li>
+</ul>
+<p>Command-line version, tests and a daily GitHub Actions example that keeps a dated history and posts changes to Slack or Discord: <a href="https://github.com/fdarkaou/app-market-leaderboard-snapshot">github.com/fdarkaou/app-market-leaderboard-snapshot</a>.</p>
+<footer>MIT licensed sample. Example data is made up and is not real apps.</footer>
+
+<script type="module">
+import { toReport, diff, compact, estimateText, moveText, toCsv, CHART_TYPES } from './leaderboard.js';
+const $ = (id) => document.getElementById(id);
+let rep = null;
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// Rank trend: lower rank is higher on the chart, so the line goes up when the app climbs.
+function spark(h) {
+  const pts = h.filter((x) => x.rank != null);
+  if (pts.length < 2) return '';
+  const max = Math.max(...pts.map((p) => p.rank)), min = Math.min(...pts.map((p) => p.rank));
+  const w = 80, ht = 22, span = Math.max(1, max - min);
+  const xy = pts.map((p, i) => `${Math.round((i / (pts.length - 1)) * w)},${Math.round(2 + ((p.rank - min) / span) * (ht - 4))}`).join(' ');
+  return `<svg width="${w}" height="${ht}" aria-label="rank trend"><polyline fill="none" stroke="#0969da" stroke-width="1.5" points="${xy}"/></svg>`;
+}
+
+function options(raw) {
+  const sel = $('which'), keep = sel.value;
+  sel.innerHTML = '';
+  if (raw?.viewChart) { const q = raw.viewChart.query; sel.add(new Option(`${q.chartType}, category ${q.categoryId}`, 'view')); }
+  for (const t of CHART_TYPES) if (raw?.charts?.[t]) sel.add(new Option(`${t}, overall`, t));
+  if ([...sel.options].some((o) => o.value === keep)) sel.value = keep;
+}
+
+function render() {
+  $('err').textContent = ''; $('out').innerHTML = '';
+  let raw, prev = null;
+  try { raw = JSON.parse($('in').value); } catch (e) { $('err').textContent = 'That is not valid JSON: ' + e.message; return; }
+  if ($('prev').value.trim()) { try { prev = JSON.parse($('prev').value); } catch (e) { $('err').textContent = 'The saved report is not valid JSON: ' + e.message; return; } }
+  options(raw);
+  const w = $('which').value;
+  try { rep = toReport(raw, w === 'view' || !w ? {} : { categoryId: 'all', chartType: w }); } catch (e) { $('err').textContent = e.message; return; }
+  const d = diff(rep, prev);
+  const fresh = new Set(d?.entered?.map((r) => r.storeId) ?? []);
+  const q = rep.query;
+  let html = `<h2>Top ${esc(q.chartType)}, ${esc(rep.categoryName || q.categoryId)}, ${esc(q.country.toUpperCase())} <span class="muted">chart day ${esc(rep.chartDay)}, compared with ${esc(rep.previousDay ?? 'no earlier day')}${rep.snapshotStale ? ', marked stale' : ''}</span></h2>`;
+  if (d?.mismatch) html += `<p class="muted">The saved report is for a different chart (${esc(d.mismatch)}).</p>`;
+  else if (d) html += `<p>Since your saved report (chart day ${esc(d.since)}): <span class="new">${d.entered.length} entered</span>, ${d.left.length} left${d.left.length ? ' (' + esc(d.left.map((r) => r.name).join(', ')) + ')' : ''}.</p>`;
+  html += `<table><thead><tr><th>#</th><th>Move</th><th>Trend</th><th>App</th><th>Category</th><th>Rating</th><th>Downloads / mo</th><th>Revenue / mo</th><th>Live ads (+7d)</th><th>Top-10 searches</th></tr></thead><tbody>` +
+    rep.data.map((r) => { const m = moveText(r, rep.previousDay); return `<tr><td>${r.rank ?? ''}</td><td class="${m.startsWith('▲') || m === 'new' ? 'up' : m.startsWith('▼') ? 'down' : ''}">${esc(m)}</td><td>${spark(r.history)}</td>
+      <td><a href="https://apps.apple.com/app/id${esc(r.storeId)}" rel="noopener">${esc(r.name)}</a>${fresh.has(r.storeId) ? ' <span class="new">entered</span>' : ''}<br><span class="muted">${esc(r.developer)}</span></td><td>${esc(r.categoryName)}</td>
+      <td class="n">${r.rating ?? ''}${r.ratingCount != null ? ` <span class="muted">(${compact(r.ratingCount)})</span>` : ''}</td><td>${esc(estimateText(r.installs))}</td><td>${esc(estimateText(r.revenue, r.estimateCurrency === 'USD' ? '$' : ''))}</td>
+      <td class="n">${r.liveAds == null ? '' : r.liveAds + (r.adsStartedLast7Days != null ? ` <span class="muted">(+${r.adsStartedLast7Days})</span>` : '')}</td><td class="n">${r.keywordsTop10 ?? ''}</td></tr>`; }).join('') + '</tbody></table>';
+  const f = rep.findings, li = (list, fmt) => list.map((a) => `<li>${fmt(a)}</li>`).join('');
+  const pl = (p) => (p ? `#${p.rank} ${esc(p.chartType)} in ${esc(p.categoryName)}` : 'not on a stored chart');
+  html += `<h2>Market findings</h2>`;
+  if (rep.pulse) html += `<p>${rep.pulse.liveAds ?? '?'} live paid ads from ${rep.pulse.advertisers ?? '?'} advertisers, ${rep.pulse.adsStartedLast7Days ?? '?'} started in the last 7 days.</p>`;
+  if (f.climbingAndBuying.length) html += `<h3>Climbing and buying ads</h3><ul>${li(f.climbingAndBuying, (a) => `${esc(a.name)}: ${pl(a.placement)}, ${a.liveAds ?? '?'} live ads`)}</ul>`;
+  if (f.newEntrants.length) html += `<h3>New chart entrants</h3><ul>${li(f.newEntrants, (a) => `${esc(a.name)}: #${a.rank ?? '?'}, ${esc(a.categoryName)}`)}</ul>`;
+  if (f.buyingNotCharting.length) html += `<h3>Buying ads, not charting</h3><ul>${li(f.buyingNotCharting, (a) => `${esc(a.name)}: ${a.liveAds ?? '?'} live ads, ${pl(a.placement)}`)}</ul>`;
+  if (f.viralNotBuying.length) html += `<h3>Viral organic, not buying ads</h3><ul>${li(f.viralNotBuying, (a) => `${esc(a.name)}: ${compact(a.views)} views as last counted`)}</ul>`;
+  $('out').innerHTML = html;
+  $('csv').disabled = false;
+}
+
+$('go').onclick = render;
+$('which').onchange = () => rep && render();
+$('ex').onclick = async () => {
+  $('in').value = await (await fetch('examples/leaderboard.json')).text();
+  $('prev').value = await (await fetch('examples/previous.json')).text();
+  $('which').innerHTML = '';
+  render();
+};
+$('csv').onclick = () => {
+  const url = URL.createObjectURL(new Blob([toCsv(rep)], { type: 'text/csv' }));
+  const q = rep.query;
+  Object.assign(document.createElement('a'), { href: url, download: `leaderboard-${q.country}-${q.categoryId}-${q.chartType}-${rep.chartDay}.csv` }).click();
+  URL.revokeObjectURL(url);
+};
+</script>
+</body>
+</html>
